@@ -16,11 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
     .concat(drinkers);
 
   const renderDrinkers = () => {
-    document.querySelector('#drink-count').innerHTML = drinkers
+    return (document.querySelector('#drink-count').innerHTML = drinkers
       .map((drinker) => `<p><span>${drinker.name}<span> : ${drinker.count}</p>`)
-      .join('');
+      .join(''));
   };
-
   renderDrinkers();
 
   const takeADrink = () => {
