@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #232324;
+    font-family: "Permanent Marker", cursive;
+    white-space: nowrap;
+}
+
+.drinking {
+    width: 350px;
+    height: 80px;
+    margin: auto;
+}
+
+#drinking-person {
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+}
+
+.container h1 {
+    color: white;
+}
+
+#drinking-button {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    height: 56px;
+    width: 96px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.drinking button:focus {
+    outline: none;
+}
+#drink-count {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.each-drinker {
+    margin-bottom: 50px;
+}
+.each-drinker span {
+    flex: 1;
+    padding: 20px 20px;
+    border-radius: 999px;
+    border: 5px solid $color;
+    font-family: "VT323", monospace;
+    font-size: 20px;
+    text-shadow: 0 3px 5px rgba(#000, 0.25);
+    white-space: nowrap;
+    color: #fff;
+    background: transparent;
+    background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 1.5s ease;
+}
+
+.each-drinker span:hover {
+    background-position: 500% 100%;
+    filter: hue-rotate(($i * 20) + deg);
+}
+.container {
+    justify-content: center;
+    text-align: center;
+}
