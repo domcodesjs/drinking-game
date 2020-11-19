@@ -7,17 +7,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.scss" />
   </head>
   <body>
-    <h1>Who's drinking next?</h1>
-    <div class="drinking">
-      <p id="drinking-person"></p>
-      <button id="drinking-button" type="button">
-        <img src="./images/tumbler.png" alt="Drink Icon" />
-      </button>
+    <div class="container">
+      <h1>Who's drinking next?</h1>
+      <div class="drinking">
+        <p id="drinking-person"></p>
+        <button id="drinking-button" type="button">
+          <img src="./images/tumbler.png" alt="Drink Icon" />
+        </button>
+      </div>
+      <div id="drink-count"></div>
     </div>
-    <div id="drink-count"></div>
     <script src="./javascript/main.js"></script>
   </body>
 </html>
